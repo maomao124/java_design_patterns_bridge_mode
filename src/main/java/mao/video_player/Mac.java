@@ -10,7 +10,7 @@ package mao.video_player;
  * Date(创建日期)： 2022/8/16
  * Time(创建时间)： 13:35
  * Version(版本): 1.0
- * Description(描述)： 无
+ * Description(描述)： Mac操作系统
  */
 
 public class Mac extends OperatingSystem
@@ -24,6 +24,7 @@ public class Mac extends OperatingSystem
     @Override
     public void play(String fileName)
     {
+        System.out.println("mac操作系统播放视频");
         videoFile.decode(fileName);
     }
 }

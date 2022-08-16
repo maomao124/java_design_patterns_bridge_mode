@@ -17,6 +17,16 @@ public class Test
 {
     public static void main(String[] args)
     {
+        OperatingSystem windows = new Windows(new AVIFile());
+        windows.play("./hello.avi");
+        windows = new Windows(new RMVBFile());
+        windows.play("./hello.rmvb");
 
+        System.out.println("-------");
+
+        OperatingSystem mac = new Mac(new AVIFile());
+        mac.play("./hello.avi");
+        mac = new Mac(new RMVBFile());
+        mac.play("./hello.rmvb");
     }
 }

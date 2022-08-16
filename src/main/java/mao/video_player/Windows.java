@@ -24,6 +24,7 @@ public class Windows extends OperatingSystem
     @Override
     public void play(String fileName)
     {
+        System.out.println("windows操作系统播放视频");
         videoFile.decode(fileName);
     }
 }
